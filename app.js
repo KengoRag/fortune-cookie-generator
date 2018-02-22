@@ -1,17 +1,23 @@
-var fortunes = [
-	"Slip off a cliff and die",
-	"Get zapped by lightning and die",
-	"Trip into an open man hole and die",
-	"Get kicked by a horse and die",
-	"Accidentally walk into the lion enclosure and die",
-	"Win the lottery then immediately have a heart attack and die",
-	"Discover the secret to immortality but die before being able to use it",
-	"A random flying baseball hits you in the head and you die",
-	"Find a dollar bill on the floor"
+var fortunesList = [
+	"You will be stranded on an island",
+	"You will decide to hunt down a white whale",
+	"You will be invited to a school to study magic",
+	"You will meet Cthulu",
+	"You will wake up one day and realize you have become a cockroach",
+	"You will be imprisoned for a crime you didn't commit",
+	"You will build a tower to heaven",
+	"You will start a farm in California",
+	"Your city will have to deal with a plague",
+	"You will go on a journey to find treasure"
 ];
 
-var randomFortune = Math.floor(Math.random()*fortunes.length);
 
 function generateFortuneCookie() {
-    document.getElementById("demo").innerHTML = fortunes[randomFortune];
+	var randomFortune = Math.floor(Math.random()*fortunesList.length);
+
+    document.getElementById("fortuneCookieText").innerHTML = fortunesList[randomFortune];
+};
+
+function previousFortune() {
+	document.getElementById("previousFortune".innerHTML = generateFortuneCookie)
 }
