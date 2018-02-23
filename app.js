@@ -15,9 +15,26 @@ var fortunesList = [
 function generateFortuneCookie() {
 	var randomFortune = Math.floor(Math.random()*fortunesList.length);
 
-    document.getElementById("fortuneCookieText").innerHTML = fortunesList[randomFortune];
-};
+	var fortune = fortunesList[randomFortune]
 
-function previousFortune() {
-	document.getElementById("previousFortune".innerHTML = generateFortuneCookie)
+    document.getElementById("fortuneCookieText").innerHTML = fortune;
+
+    var node = document.createElement("LI");
+
+    var textnode = document.createTextNode(fortune);
+
+    node.appendChild(textnode);
+
+    document.getElementById("pFortunes").appendChild(node);
+
+        if (pFortunes = fortuneCookieText.lastChild.previousSibling) {
+    	document.getElementById("fortuneCookieText").innerHTML = " "
+    } else {
+    	document.getElementById("fortuneCookieText").innerHTML = fortune
+    };
+
 }
+
+
+
+

@@ -7,7 +7,21 @@ h1 {
 	text-align: center;
 }
 
-button {
-	margin-left: 46%;
-	margin-right: 40%;
+h2 {
+	margin-top: 2%;
+	text-align: center;
+}
+
+#pFortunes {
+	margin-top: 3%;
+}
+
+.buttonHolder {
+	text-align: center;
+}
+
+.center {
+	width: 600px;
+	margin: 0 auto;
+	text-align: center;
 }
